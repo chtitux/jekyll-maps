@@ -108,7 +108,7 @@ HTML
             .fetch("marker_cluster", {})
           return unless settings.fetch("enabled", true)
           <<HTML
-<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
+<script async defer src='https://cdn.jsdelivr.net/gh/googlemaps/js-marker-clusterer@gh-pages/src/markerclusterer.js'
         onload='#{Jekyll::Maps::GoogleMapTag::JS_LIB_NAME}.initializeCluster(#{settings.to_json})'></script>
 HTML
         end
